@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-08-05T09:35:56.4082252Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="LaserComm_API_Instance" Datatype="Array[0..1] of &quot;LaserComm_API&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="iInstance_Index" Datatype="Int" /><Member Name="iSerial_Number" Datatype="Array[1..32] of Char" /><Member Name="iPart_Type" Datatype="Array[1..18] of Char" /></Section><Section Name="Output" /><Section Name="InOut" /><Section Name="Static"><Member Name="sStep" Datatype="Int" /><Member Name="sLast_Step" Datatype="Int" /><Member Name="sReset" Datatype="Bool" /><Member Name="sLaserComm_Heart_Beat_F" Datatype="Bool" /><Member Name="sLaser_Heart_Beat_R" Datatype="Bool" /><Member Name="sHeartBeat_Dn" Datatype="Bool" /><Member Name="sHB_R" Datatype="Bool" /><Member Name="sHB_F" Datatype="Bool" /><Member Name="sLaserComm_Ready" Datatype="Bool" /><Member Name="sReady_Reset" Datatype="Bool" /><Member Name="sLDD_Ref_Plane_Mismatch" Datatype="Bool" /><Member Name="sBlankResult" Datatype="&quot;LaserComm_LDD_Results&quot;"><Sections><Section Name="None"><Member Name="QA" Datatype="DInt" /><Member Name="Warning" Datatype="DInt" /><Member Name="Reasons" Datatype="Struct"><Member Name="KHD" Datatype="DInt" /><Member Name="FWS" Datatype="DInt" /><Member Name="XSP" Datatype="DInt" /><Member Name="SPO" Datatype="DInt" /><Member Name="SLE" Datatype="DInt" /><Member Name="SRE" Datatype="DInt" /><Member Name="SLH" Datatype="DInt" /><Member Name="SRH" Datatype="DInt" /><Member Name="SHH" Datatype="DInt" /><Member Name="SCP" Datatype="DInt" /><Member Name="SGP" Datatype="DInt" /><Member Name="SJP" Datatype="DInt" /><Member Name="SJH" Datatype="DInt" /><Member Name="WPH" Datatype="DInt" /><Member Name="TLE" Datatype="DInt" /><Member Name="TRE" Datatype="DInt" /><Member Name="TBD" Datatype="DInt" /><Member Name="TBW" Datatype="DInt" /></Member></Section></Sections></Member><Member Name="sBlankDDO" Datatype="&quot;LaserComm_DDO&quot;"><Sections><Section Name="None"><Member Name="Valid" Datatype="Bool" /><Member Name="Min" Datatype="Real" /><Member Name="Max" Datatype="Real" /><Member Name="Mean" Datatype="Real" /><Member Name="Dev" Datatype="Real" /></Section></Sections></Member><Member Name="sData_MissMatch_Delay" Datatype="IEC_TIMER" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="sStepTimeout" Datatype="IEC_TIMER" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="sLaserComm_Heartbeat_Timer" Datatype="IEC_TIMER" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="sInstance_Inputs" Datatype="&quot;API_Inputs&quot;"><Sections><Section Name="None"><Member Name="Heartbeat" Datatype="Bool" /><Member Name="Ready" Datatype="Bool" /><Member Name="Job_Comp" Datatype="Bool" /><Member Name="Clear_Results" Datatype="Bool" /><Member Name="Mutex" Datatype="Bool" /><Member Name="Rx" Datatype="DInt" /><Member Name="Active_Job" Datatype="DInt" /><Member Name="Fault_Code" Datatype="Array[0..9] of DInt" /><Member Name="Timeout" Datatype="Time" /><Member Name="LDD" Datatype="Struct"><Member Name="Ref_Plane" Datatype="DInt" /><Member Name="Status" Datatype="Struct"><Member Name="OK" Datatype="Bool" /><Member Name="Ready_Cmd" Datatype="Bool" /><Member Name="Wait_Trigger" Datatype="Bool" /><Member Name="Acquiring" Datatype="Bool" /><Member Name="Remote_Control" Datatype="Bool" /><Member Name="Seq_Complete" Datatype="Bool" /><Member Name="Seq_Pass" Datatype="Bool" /><Member Name="Seq_Fail" Datatype="Bool" /></Member><Member Name="DDO" Datatype="Array[0..&quot;LASERCOMM_LDD_ARRAY_SIZE&quot;] of &quot;LaserComm_DDO&quot;"><Sections><Section Name="None"><Member Name="Valid" Datatype="Bool" /><Member Name="Min" Datatype="Real" /><Member Name="Max" Datatype="Real" /><Member Name="Mean" Datatype="Real" /><Member Name="Dev" Datatype="Real" /></Section></Sections></Member><Member Name="Results" Datatype="Array[0..&quot;LASERCOMM_LDD_ARRAY_SIZE&quot;] of &quot;LaserComm_LDD_Results&quot;"><Sections><Section Name="None"><Member Name="QA" Datatype="DInt" /><Member Name="Warning" Datatype="DInt" /><Member Name="Reasons" Datatype="Struct"><Member Name="KHD" Datatype="DInt" /><Member Name="FWS" Datatype="DInt" /><Member Name="XSP" Datatype="DInt" /><Member Name="SPO" Datatype="DInt" /><Member Name="SLE" Datatype="DInt" /><Member Name="SRE" Datatype="DInt" /><Member Name="SLH" Datatype="DInt" /><Member Name="SRH" Datatype="DInt" /><Member Name="SHH" Datatype="DInt" /><Member Name="SCP" Datatype="DInt" /><Member Name="SGP" Datatype="DInt" /><Member Name="SJP" Datatype="DInt" /><Member Name="SJH" Datatype="DInt" /><Member Name="WPH" Datatype="DInt" /><Member Name="TLE" Datatype="DInt" /><Member Name="TRE" Datatype="DInt" /><Member Name="TBD" Datatype="DInt" /><Member Name="TBW" Datatype="DInt" /></Member></Section></Sections></Member></Member><Member Name="YLR" Datatype="&quot;YLR_Inputs&quot;"><Sections><Section Name="None"><Member Name="Command_Buffer_Overflow" Datatype="Bool" /><Member Name="Overheat" Datatype="Bool" /><Member Name="Emission_On" Datatype="Bool" /><Member Name="High_Back_Reflection" Datatype="Bool" /><Member Name="Analogue_Power_Control_Enabled" Datatype="Bool" /><Member Name="Pulse_Too_Long" Datatype="Bool" /><Member Name="Reserved_1" Datatype="Bool" /><Member Name="Reserved_2" Datatype="Bool" /><Member Name="Aiming_Beam_On" Datatype="Bool" /><Member Name="Pulse_Too_Short" Datatype="Bool" /><Member Name="Pulsed_Mode" Datatype="Bool" /><Member Name="Power_Supply_Off" Datatype="Bool" /><Member Name="Modulation_Enabled" Datatype="Bool" /><Member Name="Reserved_3" Datatype="Bool" /><Member Name="Reserved_4" Datatype="Bool" /><Member Name="Emission_Starting" Datatype="Bool" /><Member Name="Gate_Mode_Enabled" Datatype="Bool" /><Member Name="High_Pulse_Energy" Datatype="Bool" /><Member Name="Hardware_Emission_Control_Enabled" Datatype="Bool" /><Member Name="Power_Supply_Failure" Datatype="Bool" /><Member Name="Front_Panel_Display_Locked" Datatype="Bool" /><Member Name="Keyswitch_in_REM_Position" Datatype="Bool" /><Member Name="Waveform_Mode_On" Datatype="Bool" /><Member Name="Duty_Cycle_Too_High" Datatype="Bool" /><Member Name="Low_Temperature" Datatype="Bool" /><Member Name="Power_Supply_Alarm" Datatype="Bool" /><Member Name="Reserved_5" Datatype="Bool" /><Member Name="Hardware_Aiming_Beam_Control_Enabled" Datatype="Bool" /><Member Name="Aiming_Beam_Alarm" Datatype="Bool" /><Member Name="Critical_Error" Datatype="Bool" /><Member Name="Fiberlock_Interlock_Active" Datatype="Bool" /><Member Name="High_Average_Power" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member><Member Name="sInstance_Outputs" Datatype="&quot;API_Outputs&quot;"><Sections><Section Name="None"><Member Name="Job_Comp_Ack" Datatype="Bool" /><Member Name="Tx" Datatype="DInt" /><Member Name="Job" Datatype="DInt" /><Member Name="Serial_Number" Datatype="Array[1..32] of Char" /><Member Name="Part_Type" Datatype="Array[1..18] of Char" /><Member Name="LDD" Datatype="Struct"><Member Name="Sequence_Mask" Datatype="Array[0..&quot;LASERCOMM_LDD_ARRAY_SIZE&quot;] of Bool" /></Member></Section></Sections></Member><Member Name="sPointer" Datatype="DInt" /><Member Name="sHighest_Result" Datatype="DInt" /></Section></Sections></Member>
+    <Member Name="Dummy_Cereal_Number" Datatype="Array[1..32] of Char" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="Dummy_Part_Type" Datatype="Array[1..18] of Char" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>Call</Name>
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Dummy_LaserComm" />
+        <Component Name="iScanner" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Dummy_LaserComm" />
+        <Component Name="iSource" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>TRUE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Dummy_LaserComm" />
+        <Component Name="oScanner" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Dummy_LaserComm" />
+        <Component Name="oSource" />
+      </Symbol>
+    </Access>
+    <Call UId="26">
+      <CallInfo Name="IPG_Weld_Interface" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="27">
+          <Component Name="IPG_Weld_Interface_DB" />
+        </Instance>
+        <Parameter Name="iScanner" Section="Input" Type="&quot;Scanner_Inputs&quot;" />
+        <Parameter Name="iYLS" Section="Input" Type="&quot;YLS_Inputs&quot;" />
+        <Parameter Name="iInstance_Index" Section="Input" Type="Int" />
+        <Parameter Name="iYLR_Power_On" Section="Input" Type="Bool" />
+        <Parameter Name="bYLR" Section="Input" Type="Bool" />
+        <Parameter Name="bYLS" Section="Input" Type="Bool" />
+        <Parameter Name="oScanner" Section="Output" Type="&quot;Scanner_Outputs&quot;" />
+        <Parameter Name="oYLS" Section="Output" Type="&quot;YLS_Outputs&quot;" />
+        <Parameter Name="oYLR_Laser_On" Section="Output" Type="Bool" />
+        <Parameter Name="oYLR_Reset" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="33">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="iScanner" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="iYLS" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="28" />
+      <NameCon UId="26" Name="iInstance_Index" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="29" />
+      <NameCon UId="26" Name="iYLR_Power_On" />
+    </Wire>
+    <Wire UId="38">
+      <OpenCon UId="30" />
+      <NameCon UId="26" Name="bYLR" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="bYLS" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="26" Name="oScanner" />
+      <IdentCon UId="24" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="26" Name="oYLS" />
+      <IdentCon UId="25" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="26" Name="oYLR_Laser_On" />
+      <OpenCon UId="31" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="26" Name="oYLR_Reset" />
+      <OpenCon UId="32" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>IPG and OPC FB Calls</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Dummy_Cereal_Number" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Dummy_Part_Type" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="LaserComm_API" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="LaserComm_API_Instance" AccessModifier="Array">
+            <Access Scope="LiteralConstant">
+              <Constant>
+                <ConstantType>DInt</ConstantType>
+                <ConstantValue>0</ConstantValue>
+              </Constant>
+            </Access>
+          </Component>
+        </Instance>
+        <Parameter Name="iInstance_Index" Section="Input" Type="Int" />
+        <Parameter Name="iSerial_Number" Section="Input" Type="Array[1..32] of Char" />
+        <Parameter Name="iPart_Type" Section="Input" Type="Array[1..18] of Char" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="26">
+      <Powerrail />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="iInstance_Index" />
+    </Wire>
+    <Wire UId="28">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="iSerial_Number" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="23" />
+      <NameCon UId="24" Name="iPart_Type" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="16" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="17" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="19" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Dummy_Cereal_Number" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Dummy_Part_Type" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="LaserComm_API" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="LaserComm_API_Instance" AccessModifier="Array">
+            <Access Scope="LiteralConstant">
+              <Constant>
+                <ConstantType>DInt</ConstantType>
+                <ConstantValue>1</ConstantValue>
+              </Constant>
+            </Access>
+          </Component>
+        </Instance>
+        <Parameter Name="iInstance_Index" Section="Input" Type="Int" />
+        <Parameter Name="iSerial_Number" Section="Input" Type="Array[1..32] of Char" />
+        <Parameter Name="iPart_Type" Section="Input" Type="Array[1..18] of Char" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="26">
+      <Powerrail />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="iInstance_Index" />
+    </Wire>
+    <Wire UId="28">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="iSerial_Number" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="23" />
+      <NameCon UId="24" Name="iPart_Type" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="27" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="28" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="29" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

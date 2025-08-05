@@ -1,0 +1,2377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2025-08-05T09:35:54.7845652Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor>Grob</HeaderAuthor>
+      <HeaderFamily>Kernel_V2</HeaderFamily>
+      <HeaderName />
+      <HeaderVersion>1.4</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="rtData" Datatype="G7_RTDataPlus_V6" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Graph RT_DATA</MultiLanguageText><MultiLanguageText Lang="en-US">Graph RT_DATA</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="VERSION" Datatype="String[10]" /><Member Name="S_DISPLAY" Datatype="Int" /><Member Name="S_SEL_OLD" Datatype="Int" /><Member Name="S_DISPIDX" Datatype="USInt" /><Member Name="T_DISPIDX" Datatype="USInt" /><Member Name="MOP_EDGE" Datatype="G7_MOPPlus_V6" Version="1.0"><Sections><Section Name="None"><Member Name="AUTO" Datatype="Bool" /><Member Name="MAN" Datatype="Bool" /><Member Name="TAP" Datatype="Bool" /><Member Name="TOP" Datatype="Bool" /><Member Name="ACK_S" Datatype="Bool" /><Member Name="REG_S" Datatype="Bool" /><Member Name="T_PREV" Datatype="Bool" /><Member Name="T_NEXT" Datatype="Bool" /><Member Name="LOCK" Datatype="Bool" /><Member Name="SUP" Datatype="Bool" /><Member Name="ACKREQ" Datatype="Bool" /><Member Name="SSKIP" Datatype="Bool" /><Member Name="OFF" Datatype="Bool" /><Member Name="INIT" Datatype="Bool" /><Member Name="HALT" Datatype="Bool" /><Member Name="TMS_HALT" Datatype="Bool" /><Member Name="OPS_ZERO" Datatype="Bool" /><Member Name="SACT_DISP" Datatype="Bool" /><Member Name="SEF_DISP" Datatype="Bool" /><Member Name="SALL_DISP" Datatype="Bool" /><Member Name="S_PREV" Datatype="Bool" /><Member Name="S_NEXT" Datatype="Bool" /><Member Name="S_SELOK" Datatype="Bool" /><Member Name="S_ON" Datatype="Bool" /><Member Name="S_OFF" Datatype="Bool" /><Member Name="T_PUSH" Datatype="Bool" /><Member Name="REG" Datatype="Bool" /><Member Name="ACK" Datatype="Bool" /><Member Name="IL_PERM" Datatype="Bool" /><Member Name="T_PERM" Datatype="Bool" /><Member Name="ILP_MAN" Datatype="Bool" /><Member Name="LMODE" Datatype="Bool" /><Member Name="RESET_CRIT" Datatype="Bool" /></Section></Sections></Member><Member Name="MOP" Datatype="G7_MOPPlus_V6" Version="1.0"><Sections><Section Name="None"><Member Name="AUTO" Datatype="Bool" /><Member Name="MAN" Datatype="Bool" /><Member Name="TAP" Datatype="Bool" /><Member Name="TOP" Datatype="Bool" /><Member Name="ACK_S" Datatype="Bool" /><Member Name="REG_S" Datatype="Bool" /><Member Name="T_PREV" Datatype="Bool" /><Member Name="T_NEXT" Datatype="Bool" /><Member Name="LOCK" Datatype="Bool" /><Member Name="SUP" Datatype="Bool" /><Member Name="ACKREQ" Datatype="Bool" /><Member Name="SSKIP" Datatype="Bool" /><Member Name="OFF" Datatype="Bool" /><Member Name="INIT" Datatype="Bool" /><Member Name="HALT" Datatype="Bool" /><Member Name="TMS_HALT" Datatype="Bool" /><Member Name="OPS_ZERO" Datatype="Bool" /><Member Name="SACT_DISP" Datatype="Bool" /><Member Name="SEF_DISP" Datatype="Bool" /><Member Name="SALL_DISP" Datatype="Bool" /><Member Name="S_PREV" Datatype="Bool" /><Member Name="S_NEXT" Datatype="Bool" /><Member Name="S_SELOK" Datatype="Bool" /><Member Name="S_ON" Datatype="Bool" /><Member Name="S_OFF" Datatype="Bool" /><Member Name="T_PUSH" Datatype="Bool" /><Member Name="REG" Datatype="Bool" /><Member Name="ACK" Datatype="Bool" /><Member Name="IL_PERM" Datatype="Bool" /><Member Name="T_PERM" Datatype="Bool" /><Member Name="ILP_MAN" Datatype="Bool" /><Member Name="LMODE" Datatype="Bool" /><Member Name="RESET_CRIT" Datatype="Bool" /></Section></Sections></Member><Member Name="TIME_DELTA" Datatype="Time" /><Member Name="SQ_FLAGS" Datatype="G7_SQFlagsPlus_V6" Version="1.0"><Sections><Section Name="None"><Member Name="ERR_FLT" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="FAULT" Datatype="Bool" /><Member Name="RT_FAIL" Datatype="Bool" /><Member Name="NO_SNO" Datatype="Bool" /><Member Name="NF_OFL" Datatype="Bool" /><Member Name="SA_OFL" Datatype="Bool" /><Member Name="TV_OFL" Datatype="Bool" /><Member Name="NO_SWI" Datatype="Bool" /><Member Name="CYC_OP" Datatype="Bool" /><Member Name="AS_MSG" Datatype="Bool" /><Member Name="SQ_BUSY" Datatype="Bool" /><Member Name="SA_BUSY" Datatype="Bool" /></Section></Sections></Member><Member Name="PRE_CNT" Datatype="USInt" /><Member Name="POST_CNT" Datatype="USInt" /><Member Name="SQ_CNT" Datatype="USInt" /><Member Name="S_CNT" Datatype="USInt" /><Member Name="LOCK_CNT" Datatype="USInt" /><Member Name="SUP_CNT" Datatype="USInt" /><Member Name="T_CNT" Datatype="USInt" /><Member Name="SQ_PART_CNT" Datatype="USInt" /><Member Name="MAX_TVAL" Datatype="USInt" /><Member Name="MAX_SACT" Datatype="USInt" /><Member Name="AS_MSG" Datatype="Byte" /><Member Name="EXEC_BITS" Datatype="Array[0..249] of Bool" /><Member Name="OFFSETS" Datatype="G7_OffsetsPlus_V6" Version="1.0"><Sections><Section Name="None"><Member Name="SINI_OFFSET" Datatype="UInt" /><Member Name="LSTT_OFFSET" Datatype="UInt" /><Member Name="ATAJ_OFFSET" Datatype="UInt" /><Member Name="ATAB_OFFSET" Datatype="UInt" /><Member Name="PSTT_OFFSET" Datatype="UInt" /><Member Name="NSTT_OFFSET" Datatype="UInt" /><Member Name="ASSJ_OFFSET" Datatype="UInt" /><Member Name="ASSB_OFFSET" Datatype="UInt" /><Member Name="PTTS_OFFSET" Datatype="UInt" /><Member Name="NTTS_OFFSET" Datatype="UInt" /><Member Name="SW_SQTS_OFFSET" Datatype="UInt" /><Member Name="SWITCH_OFFSET" Datatype="UInt" /><Member Name="TVX_OFFSET" Datatype="UInt" /><Member Name="TTX_OFFSET" Datatype="UInt" /><Member Name="TSX_OFFSET" Datatype="UInt" /><Member Name="S00X_OFFSET" Datatype="UInt" /><Member Name="SOFFX_OFFSET" Datatype="UInt" /><Member Name="SONX_OFFSET" Datatype="UInt" /><Member Name="SAX_OFFSET" Datatype="UInt" /><Member Name="SERRX_OFFSET" Datatype="UInt" /><Member Name="SMX_OFFSET" Datatype="UInt" /><Member Name="S0X_OFFSET" Datatype="UInt" /><Member Name="S1X_OFFSET" Datatype="UInt" /></Section></Sections></Member><Member Name="THRESHOLD_SUP" Datatype="USInt" /><Member Name="THRESHOLD_WARN" Datatype="USInt" /><Member Name="GC_FLAGS" Datatype="G7_GCFlagsPlus_V6" Version="1.0"><Sections><Section Name="None"><Member Name="COND_ED" Datatype="USInt" /><Member Name="SSKIP_ON" Datatype="Bool" /><Member Name="ACK_REQ" Datatype="Bool" /><Member Name="ILP_MAN" Datatype="Bool" /><Member Name="SWM_LOCKED" Datatype="Bool" /><Member Name="SET_ENO" Datatype="Bool" /><Member Name="IL_CAT" Datatype="USInt" /><Member Name="IL_SUBCAT_1" Datatype="USInt" /><Member Name="IL_SUBCAT_2" Datatype="USInt" /><Member Name="REACT_CAT" Datatype="USInt" /><Member Name="REACT_SUBCAT_1" Datatype="USInt" /><Member Name="REACT_SUBCAT_2" Datatype="USInt" /><Member Name="WARN_CAT" Datatype="USInt" /><Member Name="WARN_SUBCAT_1" Datatype="USInt" /><Member Name="WARN_SUBCAT_2" Datatype="USInt" /><Member Name="CRIT_ON" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="timeOutTime" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Timeout Zeit</MultiLanguageText><MultiLanguageText Lang="en-GB">Timeout time</MultiLanguageText><MultiLanguageText Lang="en-US">Timeout time</MultiLanguageText></Comment><StartValue>T#5m</StartValue></Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="timeOut" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Timeout Fehler</MultiLanguageText><MultiLanguageText Lang="en-GB">Timeout error</MultiLanguageText><MultiLanguageText Lang="en-US">Timeout error</MultiLanguageText></Comment></Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="funcGrp" Datatype="&quot;typeCaCgFg&quot;" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Funktionsgruppe</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Function Group</MultiLanguageText>
+      </Comment>
+      <Sections>
+        <Section Name="None">
+          <Member Name="info" Datatype="Struct">
+            <Member Name="name" Datatype="WString[&quot;GRP_JOB_NAME_SIZE&quot;]" />
+            <Member Name="idString" Datatype="WString[&quot;GRP_JOB_NAME_SIZE&quot;]" />
+            <Member Name="groupType" Datatype="Int" />
+            <Member Name="dbAdress" Datatype="DB_ANY" />
+            <Member Name="panel" Datatype="Struct">
+              <Member Name="assignment" Datatype="Int" />
+              <Member Name="memoryIndex" Datatype="Int" />
+            </Member>
+            <Member Name="parentGroup" Datatype="Struct">
+              <Member Name="groupType" Datatype="Int" />
+              <Member Name="name" Datatype="WString[&quot;GRP_JOB_NAME_SIZE&quot;]" />
+              <Member Name="dbAdress" Datatype="DB_ANY" />
+            </Member>
+            <Member Name="groupOvrv" Datatype="Struct">
+              <Member Name="groupOvrvAdress" Datatype="DB_ANY" />
+              <Member Name="listedIndex" Datatype="DInt" />
+            </Member>
+            <Member Name="motionOvrv" Datatype="Struct">
+              <Member Name="enabled" Datatype="Bool" />
+              <Member Name="motionOvrvAdress" Datatype="DB_ANY" />
+            </Member>
+          </Member>
+          <Member Name="groupModes" Datatype="Struct">
+            <Member Name="activation" Datatype="Struct">
+              <Member Name="deactivate" Datatype="Bool" />
+              <Member Name="activate" Datatype="Bool" />
+              <Member Name="isDeactived" Datatype="Bool" />
+            </Member>
+            <Member Name="interlinkedMode" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+            </Member>
+          </Member>
+          <Member Name="enable" Datatype="Struct">
+            <Member Name="hardware" Datatype="Bool" />
+            <Member Name="safety" Datatype="Bool" />
+            <Member Name="enterSafeArea" Datatype="Struct">
+              <Member Name="isEnabled" Datatype="Bool" />
+              <Member Name="disable" Datatype="Bool" />
+              <Member Name="disableSelected" Datatype="Bool" />
+              <Member Name="request" Datatype="Bool" />
+              <Member Name="isRequested" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+          </Member>
+          <Member Name="baseFunction" Datatype="Struct">
+            <Member Name="homePos" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="isSelected" Datatype="Bool" />
+              <Member Name="isPending" Datatype="Bool" />
+              <Member Name="inExecution" Datatype="Bool" />
+              <Member Name="inExecutionPulse" Datatype="Bool" />
+              <Member Name="inState" Datatype="Bool" />
+              <Member Name="display" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="start" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="isSelected" Datatype="Bool" />
+              <Member Name="isPending" Datatype="Bool" />
+              <Member Name="inExecution" Datatype="Bool" />
+              <Member Name="inExecutionPulse" Datatype="Bool" />
+              <Member Name="inState" Datatype="Bool" />
+              <Member Name="display" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="stop" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="selectBy" Datatype="Struct">
+                <Member Name="manual" Datatype="Bool" />
+                <Member Name="fault" Datatype="Bool" />
+                <Member Name="system" Datatype="Bool" />
+              </Member>
+              <Member Name="isSelected" Datatype="Bool" />
+              <Member Name="isSelectedBy" Datatype="Struct">
+                <Member Name="manual" Datatype="Bool" />
+                <Member Name="fault" Datatype="Bool" />
+                <Member Name="system" Datatype="Bool" />
+              </Member>
+              <Member Name="isPending" Datatype="Bool" />
+              <Member Name="inExecution" Datatype="Bool" />
+              <Member Name="inState" Datatype="Bool" />
+              <Member Name="display" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="reset" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="isSelected" Datatype="Bool" />
+              <Member Name="isPending" Datatype="Bool" />
+              <Member Name="inExecution" Datatype="Bool" />
+              <Member Name="inState" Datatype="Bool" />
+              <Member Name="display" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="stopCycleEnd" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="isSelected" Datatype="Bool" />
+              <Member Name="isPending" Datatype="Bool" />
+              <Member Name="inExecution" Datatype="Bool" />
+              <Member Name="inState" Datatype="Bool" />
+              <Member Name="display" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="singleCycleStep" Datatype="Struct">
+              <Member Name="jobSelected" Datatype="Bool" />
+              <Member Name="homePosStep" Datatype="Struct">
+                <Member Name="jobSelected" Datatype="Bool" />
+                <Member Name="active" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="startOrToHomePosActive" Datatype="Bool" />
+            <Member Name="stoppedOrInReset" Datatype="Bool" />
+          </Member>
+          <Member Name="operatingMode" Datatype="Struct">
+            <Member Name="automatic" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="singleCycle" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="singleStep" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="manual" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+          </Member>
+          <Member Name="cycleType" Datatype="Struct">
+            <Member Name="warmUp" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="runOut" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+              <Member Name="selectedByUpperLevel" Datatype="Bool" />
+            </Member>
+            <Member Name="withoutPart" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="userDefined1" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="userDefined2" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+          </Member>
+          <Member Name="specialSignal" Datatype="Struct">
+            <Member Name="userLevel" Datatype="&quot;typeUserLevel&quot;">
+              <Sections>
+                <Section Name="None">
+                  <Member Name="userLevelBitByBit" Datatype="Struct">
+                    <Member Name="level1" Datatype="Bool" />
+                    <Member Name="level2" Datatype="Bool" />
+                    <Member Name="level3" Datatype="Bool" />
+                    <Member Name="level4" Datatype="Bool" />
+                    <Member Name="level5" Datatype="Bool" />
+                    <Member Name="level6" Datatype="Bool" />
+                    <Member Name="level7" Datatype="Bool" />
+                    <Member Name="level8" Datatype="Bool" />
+                  </Member>
+                  <Member Name="userLevel" Datatype="Int" />
+                  <Member Name="userLevelChanged" Datatype="Bool" />
+                </Section>
+              </Sections>
+            </Member>
+            <Member Name="isEmpty" Datatype="Bool" />
+            <Member Name="serviceMode" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="userDefined1" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="userDefined2" Datatype="Struct">
+              <Member Name="select" Datatype="Bool" />
+              <Member Name="deselect" Datatype="Bool" />
+              <Member Name="isActive" Datatype="Bool" />
+              <Member Name="operatorGuidance" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="sequenceController" Datatype="Struct">
+              <Member Name="isInitial" Datatype="Bool" />
+              <Member Name="setInitias" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelected" Datatype="Bool" />
+              </Member>
+              <Member Name="lockForwarding" Datatype="Struct">
+                <Member Name="select" Datatype="Bool" />
+                <Member Name="isSelsected" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="standstill" Datatype="Struct">
+              <Member Name="reset" Datatype="Bool" />
+              <Member Name="isStandingStill" Datatype="Bool" />
+            </Member>
+            <Member Name="cyclicClock" Datatype="UInt" />
+          </Member>
+          <Member Name="faultManagement" Datatype="&quot;typeFaultManagement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="selectAckFault" Datatype="Bool" />
+                <Member Name="ackFault" Datatype="Bool" />
+                <Member Name="faultGeneral" Datatype="Bool" />
+                <Member Name="faultInstantStop" Datatype="Bool" />
+                <Member Name="faultMachineOut" Datatype="Bool" />
+                <Member Name="faultInCycleEnd" Datatype="Bool" />
+                <Member Name="faultNoStop" Datatype="Bool" />
+                <Member Name="faultActive" Datatype="Bool" />
+                <Member Name="messageGeneral" Datatype="Bool" />
+                <Member Name="messageOperatorCall" Datatype="Bool" />
+                <Member Name="selectInstantStop" Datatype="Bool" />
+                <Member Name="selectMachineOut" Datatype="Bool" />
+                <Member Name="selectStopCycleEnd" Datatype="Bool" />
+                <Member Name="faultInstantStopByParent" Datatype="Bool" />
+                <Member Name="faultInCycleEndByParent" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="summarySignal" Datatype="Struct">
+            <Member Name="cyclicFirstCall" Datatype="Struct">
+              <Member Name="groupModes" Datatype="Bool" />
+              <Member Name="faults" Datatype="Bool" />
+              <Member Name="complete" Datatype="Bool" />
+            </Member>
+            <Member Name="oneUnit" Datatype="Struct">
+              <Member Name="isPresent" Datatype="Bool" />
+              <Member Name="groupModes" Datatype="Struct">
+                <Member Name="isDeactivated" Datatype="Bool" />
+                <Member Name="isActivated" Datatype="Bool" />
+                <Member Name="inInterlinkedMode" Datatype="Bool" />
+              </Member>
+              <Member Name="baseFunction" Datatype="Struct">
+                <Member Name="inHomePos" Datatype="Bool" />
+                <Member Name="toHomePos" Datatype="Struct">
+                  <Member Name="isPending" Datatype="Bool" />
+                  <Member Name="active" Datatype="Bool" />
+                  <Member Name="enabled" Datatype="Bool" />
+                </Member>
+                <Member Name="start" Datatype="Struct">
+                  <Member Name="isPending" Datatype="Bool" />
+                  <Member Name="active" Datatype="Bool" />
+                  <Member Name="enabled" Datatype="Bool" />
+                </Member>
+                <Member Name="stopped" Datatype="Bool" />
+                <Member Name="inReset" Datatype="Bool" />
+                <Member Name="stopCycleEnd" Datatype="Struct">
+                  <Member Name="active" Datatype="Bool" />
+                  <Member Name="reached" Datatype="Bool" />
+                </Member>
+                <Member Name="stoppedOrInReset" Datatype="Bool" />
+                <Member Name="singleCycleStep" Datatype="Struct">
+                  <Member Name="jobSelected" Datatype="Bool" />
+                  <Member Name="homePosStep" Datatype="Struct">
+                    <Member Name="jobSelected" Datatype="Bool" />
+                    <Member Name="active" Datatype="Bool" />
+                  </Member>
+                </Member>
+              </Member>
+              <Member Name="operatingMode" Datatype="Struct">
+                <Member Name="inAutomatic" Datatype="Bool" />
+                <Member Name="inSingleCycle" Datatype="Bool" />
+                <Member Name="inSingleStep" Datatype="Bool" />
+                <Member Name="inManual" Datatype="Bool" />
+              </Member>
+              <Member Name="cycleType" Datatype="Struct">
+                <Member Name="warmUpActive" Datatype="Bool" />
+                <Member Name="runOutActive" Datatype="Bool" />
+                <Member Name="withoutPartActive" Datatype="Bool" />
+                <Member Name="userDefined1Active" Datatype="Bool" />
+                <Member Name="userDefined2Active" Datatype="Bool" />
+              </Member>
+              <Member Name="specialSignal" Datatype="Struct">
+                <Member Name="empty" Datatype="Bool" />
+                <Member Name="standstill" Datatype="Bool" />
+                <Member Name="serviceModeActive" Datatype="Bool" />
+                <Member Name="stoppedOrInReset" Datatype="Bool" />
+                <Member Name="userDefined1Active" Datatype="Bool" />
+                <Member Name="userDefined2Active" Datatype="Bool" />
+              </Member>
+              <Member Name="displays" Datatype="Struct">
+                <Member Name="homePos" Datatype="Bool" />
+                <Member Name="start" Datatype="Bool" />
+                <Member Name="stop" Datatype="Bool" />
+                <Member Name="reset" Datatype="Bool" />
+                <Member Name="stopCycleEnd" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="allUnits" Datatype="Struct">
+              <Member Name="groupModes" Datatype="Struct">
+                <Member Name="isDeactivated" Datatype="Bool" />
+                <Member Name="isActivated" Datatype="Bool" />
+                <Member Name="inInterlinkedMode" Datatype="Bool" />
+              </Member>
+              <Member Name="baseFunction" Datatype="Struct">
+                <Member Name="inHomePos" Datatype="Bool" />
+                <Member Name="toHomePos" Datatype="Struct">
+                  <Member Name="isPending" Datatype="Bool" />
+                  <Member Name="active" Datatype="Bool" />
+                  <Member Name="enabled" Datatype="Bool" />
+                </Member>
+                <Member Name="start" Datatype="Struct">
+                  <Member Name="isPending" Datatype="Bool" />
+                  <Member Name="active" Datatype="Bool" />
+                  <Member Name="enabled" Datatype="Bool" />
+                </Member>
+                <Member Name="stopped" Datatype="Bool" />
+                <Member Name="inReset" Datatype="Bool" />
+                <Member Name="stopCycleEnd" Datatype="Struct">
+                  <Member Name="active" Datatype="Bool" />
+                  <Member Name="reached" Datatype="Bool" />
+                </Member>
+                <Member Name="stoppedOrInReset" Datatype="Bool" />
+                <Member Name="singleCycleStep" Datatype="Struct">
+                  <Member Name="jobSelected" Datatype="Bool" />
+                  <Member Name="homePosStep" Datatype="Struct">
+                    <Member Name="jobSelected" Datatype="Bool" />
+                    <Member Name="active" Datatype="Bool" />
+                  </Member>
+                </Member>
+              </Member>
+              <Member Name="operatingMode" Datatype="Struct">
+                <Member Name="inAutomatic" Datatype="Bool" />
+                <Member Name="inSingleCycle" Datatype="Bool" />
+                <Member Name="inSingleStep" Datatype="Bool" />
+                <Member Name="inManual" Datatype="Bool" />
+              </Member>
+              <Member Name="cycleType" Datatype="Struct">
+                <Member Name="warmUpActive" Datatype="Bool" />
+                <Member Name="runOutActive" Datatype="Bool" />
+                <Member Name="withoutPartActive" Datatype="Bool" />
+                <Member Name="userDefined1Active" Datatype="Bool" />
+                <Member Name="userDefined2Active" Datatype="Bool" />
+              </Member>
+              <Member Name="specialSignal" Datatype="Struct">
+                <Member Name="empty" Datatype="Bool" />
+                <Member Name="standstill" Datatype="Bool" />
+                <Member Name="serviceModeActive" Datatype="Bool" />
+                <Member Name="userDefined1Active" Datatype="Bool" />
+                <Member Name="userDefined2Active" Datatype="Bool" />
+              </Member>
+              <Member Name="displays" Datatype="Struct">
+                <Member Name="homePos" Datatype="Bool" />
+                <Member Name="start" Datatype="Bool" />
+                <Member Name="stop" Datatype="Bool" />
+                <Member Name="reset" Datatype="Bool" />
+                <Member Name="stopCycleEnd" Datatype="Bool" />
+              </Member>
+            </Member>
+            <Member Name="diagnostic" Datatype="Struct">
+              <Member Name="faultGeneral" Datatype="Bool" />
+              <Member Name="faultMachineOff" Datatype="Bool" />
+              <Member Name="faultActive" Datatype="Bool" />
+              <Member Name="messageGeneral" Datatype="Bool" />
+              <Member Name="messageOperatorCall" Datatype="Bool" />
+            </Member>
+            <Member Name="generalEnables" Datatype="Struct">
+              <Member Name="enterSafeArea" Datatype="Bool" />
+            </Member>
+          </Member>
+          <Member Name="mso" Datatype="&quot;typeMSOs&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="activeMSO2" Datatype="Bool" />
+                <Member Name="activeMSO3" Datatype="Bool" />
+                <Member Name="selectedMSO2" Datatype="Bool" />
+                <Member Name="selectedMSO3" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="masterSlaveFg" Datatype="Struct">
+            <Member Name="isSlave" Datatype="Bool" />
+            <Member Name="masterFg" Datatype="Struct">
+              <Member Name="name" Datatype="WString[&quot;GRP_JOB_NAME_SIZE&quot;]" />
+              <Member Name="inHomePosition" Datatype="Bool" />
+              <Member Name="inStopAtCycleEnd" Datatype="Bool" />
+            </Member>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="fgControlGeneral" Datatype="&quot;typeFgControlGeneral&quot;" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Funktionsgruppe Allgemeine Steuerschnittstelle</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">General control interface function group</MultiLanguageText>
+      </Comment>
+      <Sections>
+        <Section Name="None">
+          <Member Name="homePosConditions" Datatype="Bool" />
+          <Member Name="waitingPositionStep" Datatype="Bool" />
+          <Member Name="homePostionStep" Datatype="Bool" />
+          <Member Name="withoutExecutionStep" Datatype="Bool" />
+          <Member Name="jobNumber" Datatype="Int" />
+          <Member Name="activeJobNumber" Datatype="Int" />
+          <Member Name="seqNumber" Datatype="Int" />
+          <Member Name="internalSignals" Datatype="Struct">
+            <Member Name="startDelayed" Datatype="Struct">
+              <Member Name="inExecution" Datatype="Bool" />
+              <Member Name="inExecutionPulse" Datatype="Bool" />
+            </Member>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="statErrorTimeOut" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">ProDiag-Störung: Timeout</MultiLanguageText><MultiLanguageText Lang="en-GB">ProDiag fault: Timeout</MultiLanguageText><MultiLanguageText Lang="en-US">ProDiag fault: Timeout</MultiLanguageText></Comment></Member>
+    <Member Name="statCount" Datatype="USInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Zähler</MultiLanguageText><MultiLanguageText Lang="en-US">Counter</MultiLanguageText></Comment></Member>
+    <Member Name="statFgName" Datatype="WString[&quot;GRP_JOB_NAME_SIZE&quot;]" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">ProDiag Begleitwert: Name der FG</MultiLanguageText><MultiLanguageText Lang="en-US">ProDiag associated value: Name of the FG</MultiLanguageText></Comment></Member>
+    <Member Name="statGraphStepNumber" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">ProDiag Begleitwert: Schrittnummer</MultiLanguageText><MultiLanguageText Lang="en-GB">ProDiag associated value: step number</MultiLanguageText><MultiLanguageText Lang="en-US">ProDiag associated value: step number</MultiLanguageText></Comment></Member>
+    <Member Name="statLastStepNumber" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Letzte Schrittnummer gespeichert</MultiLanguageText><MultiLanguageText Lang="en-GB">Last step number saved</MultiLanguageText><MultiLanguageText Lang="en-US">Last step number saved</MultiLanguageText></Comment></Member>
+    <Member Name="instTimerTimeOut" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Timer Timeout</MultiLanguageText><MultiLanguageText Lang="en-GB">Timer Timeout</MultiLanguageText><MultiLanguageText Lang="en-US">Timer for timeout</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>true</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>GraphEvaluation</Name>
+      <Number>38</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>true</SetENOAutomatically>
+      <Supervisions><BlockTypeSupervisions xmlns="http://www.siemens.com/automation/Openness/SW/BlockTypeSupervisions/v3">
+  <BlockTypeSupervision Number="2" Type="Operand">
+    <SupervisedOperand Name="#statErrorTimeOut" />
+    <SupervisedStatus>true</SupervisedStatus>
+    <DelayOperand Name="T#0ms" />
+    <Conditions>
+      <Condition>
+        <ConditionOperand Number="1" Name="" />
+        <TriggeringStatus>true</TriggeringStatus>
+      </Condition>
+      <Condition>
+        <ConditionOperand Number="2" Name="" />
+        <TriggeringStatus>true</TriggeringStatus>
+      </Condition>
+      <Condition>
+        <ConditionOperand Number="3" Name="" />
+        <TriggeringStatus>true</TriggeringStatus>
+      </Condition>
+    </Conditions>
+    <CategoryNumber>1</CategoryNumber>
+    <SubCategory1Number>2</SubCategory1Number>
+    <SubCategory2Number>0</SubCategory2Number>
+    <SpecificField>
+      <AssociatedValues>
+        <AssociatedValue>
+          <AssociatedValueOperand Number="1" Name="#statGraphStepNumber" />
+        </AssociatedValue>
+        <AssociatedValue>
+          <AssociatedValueOperand Number="2" Name="#statFgName" />
+        </AssociatedValue>
+      </AssociatedValues>
+      <SpecificFieldText>
+        <MultiLanguageText Lang="de-DE">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;ProjectText xmlns="http://www.siemens.com/Industry/2009/10/01/Automation/FormattedText"&gt;&lt;body&gt;&lt;p&gt;&lt;field ref="1" /&gt;: Graph Timeout in Schritt &lt;field ref="0" /&gt;&lt;/p&gt;&lt;/body&gt;&lt;fieldinfos&gt;&lt;fieldinfo name="1" domaintype="SpecificTextTag"&gt;&lt;domaindata&gt;&lt;sd&gt;5&lt;/sd&gt;&lt;format&gt;&lt;type&gt;CharacterString&lt;/type&gt;&lt;length&gt;0&lt;/length&gt;&lt;precision&gt;-1&lt;/precision&gt;&lt;/format&gt;&lt;/domaindata&gt;&lt;/fieldinfo&gt;&lt;fieldinfo name="0" domaintype="SpecificTextTag"&gt;&lt;domaindata xmlns="http://www.siemens.com/Industry/2009/10/01/Automation/FormattedText"&gt;&lt;sd&gt;4&lt;/sd&gt;&lt;format&gt;&lt;type&gt;SignedDecimal&lt;/type&gt;&lt;length&gt;0&lt;/length&gt;&lt;precision&gt;-1&lt;/precision&gt;&lt;/format&gt;&lt;/domaindata&gt;&lt;/fieldinfo&gt;&lt;/fieldinfos&gt;&lt;/ProjectText&gt;</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;ProjectText xmlns="http://www.siemens.com/Industry/2009/10/01/Automation/FormattedText"&gt;&lt;body&gt;&lt;p&gt;&lt;field ref="1" /&gt;: Graph timeout in step &lt;field ref="0" /&gt;&lt;/p&gt;&lt;/body&gt;&lt;fieldinfos&gt;&lt;fieldinfo name="1" domaintype="SpecificTextTag"&gt;&lt;domaindata&gt;&lt;sd&gt;5&lt;/sd&gt;&lt;format&gt;&lt;type&gt;CharacterString&lt;/type&gt;&lt;length&gt;0&lt;/length&gt;&lt;precision&gt;-1&lt;/precision&gt;&lt;/format&gt;&lt;/domaindata&gt;&lt;/fieldinfo&gt;&lt;fieldinfo name="0" domaintype="SpecificTextTag"&gt;&lt;domaindata xmlns="http://www.siemens.com/Industry/2009/10/01/Automation/FormattedText"&gt;&lt;sd&gt;4&lt;/sd&gt;&lt;format&gt;&lt;type&gt;SignedDecimal&lt;/type&gt;&lt;length&gt;0&lt;/length&gt;&lt;precision&gt;-1&lt;/precision&gt;&lt;/format&gt;&lt;/domaindata&gt;&lt;/fieldinfo&gt;&lt;/fieldinfos&gt;&lt;/ProjectText&gt;</MultiLanguageText>
+      </SpecificFieldText>
+    </SpecificField>
+  </BlockTypeSupervision>
+</BlockTypeSupervisions></Supervisions>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>S7 graph evaluation</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>S7-Graph Auswertung</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <LineComment Inserted="false" NoClosingBracket="false" UId="21">
+    <Text UId="22">===============================================================================================================================</Text>
+  </LineComment>
+  <NewLine Num="1" UId="23" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="24">
+    <Text UId="25"> GROB-WERKE GmbH &amp; Co. KG</Text>
+  </LineComment>
+  <NewLine Num="1" UId="26" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="27">
+    <Text UId="28"> (c)Copyright 2022 All Rights Reserved</Text>
+  </LineComment>
+  <NewLine Num="1" UId="29" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="30">
+    <Text UId="31" />
+  </LineComment>
+  <NewLine Num="1" UId="32" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="33">
+    <Text UId="34"> Reproduction, replication, modification, distribution, communication to the public and making the work available to the public</Text>
+  </LineComment>
+  <NewLine Num="1" UId="35" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="36">
+    <Text UId="37"> or others as well as other exploitation of the software and, if applicable, the medium containing the software without express</Text>
+  </LineComment>
+  <NewLine Num="1" UId="38" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="39">
+    <Text UId="40"> authorization is prohibited. Offenders will be held liable for the payment of damages. All rights reserved with regard to the</Text>
+  </LineComment>
+  <NewLine Num="1" UId="41" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="42">
+    <Text UId="43"> protection of intellectual property</Text>
+  </LineComment>
+  <NewLine Num="1" UId="44" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="45">
+    <Text UId="46"> ------------------------------------------------------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="47" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="48">
+    <Text UId="49">     Library:       Kernel V2</Text>
+  </LineComment>
+  <NewLine Num="1" UId="50" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="51">
+    <Text UId="52">     Tested with:   PLCSIM</Text>
+  </LineComment>
+  <NewLine Num="1" UId="53" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="54">
+    <Text UId="55">     Engineering:   TIA Portal V17</Text>
+  </LineComment>
+  <NewLine Num="1" UId="56" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="57">
+    <Text UId="58">     Restrictions:  ---</Text>
+  </LineComment>
+  <NewLine Num="1" UId="59" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="60">
+    <Text UId="61">     Requirements:  ---</Text>
+  </LineComment>
+  <NewLine Num="1" UId="62" />
+  <Token Text="REGION" UId="63" />
+  <Blank Num="1" UId="64" />
+  <Text UId="65">Functionality</Text>
+  <NewLine Num="1" UId="66" />
+  <Blank Num="4" UId="67" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="68">
+    <Text UId="69">                This function block has to be  called in the permanent post-instructions</Text>
+  </LineComment>
+  <NewLine Num="1" UId="70" />
+  <Blank Num="4" UId="71" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="72">
+    <Text UId="73" />
+  </LineComment>
+  <NewLine Num="1" UId="74" />
+  <Blank Num="4" UId="75" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="76">
+    <Text UId="77">                It evaluates information of the graph and writes informations to the function group</Text>
+  </LineComment>
+  <NewLine Num="1" UId="78" />
+  <Blank Num="4" UId="79" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="80">
+    <Text UId="81">                control interface (typeFgControlGeneral in Fg*General-DB)</Text>
+  </LineComment>
+  <NewLine Num="1" UId="82" />
+  <Blank Num="4" UId="83" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="84">
+    <Text UId="85">                Further it triggers stop to the function group in single step mode after finishing a sequence step</Text>
+  </LineComment>
+  <NewLine Num="1" UId="86" />
+  <Blank Num="4" UId="87" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="88">
+    <Text UId="89" />
+  </LineComment>
+  <NewLine Num="1" UId="90" />
+  <Blank Num="4" UId="91" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="92">
+    <Text UId="93">                Handles the general graph step time out</Text>
+  </LineComment>
+  <NewLine Num="1" UId="94" />
+  <Token Text="END_REGION" UId="95" />
+  <NewLine Num="1" UId="96" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="97">
+    <Text UId="98"> ------------------------------------------------------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="99" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="100">
+    <Text UId="101"> Change log table: </Text>
+  </LineComment>
+  <NewLine Num="1" UId="102" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="103">
+    <Text UId="104">     Version    Date      Expert in charge    Changes applied </Text>
+  </LineComment>
+  <NewLine Num="1" UId="105" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="106">
+    <Text UId="107">     -------|------------|-----------------|-----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="108" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="109">
+    <Text UId="110">     00.00    24.05.2022  Dorn, F.            Migrated from TST V1.4, block version 01.00</Text>
+  </LineComment>
+  <NewLine Num="1" UId="111" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="112">
+    <Text UId="113">     01.00    24.05.2022  Dorn, F.            First released version</Text>
+  </LineComment>
+  <NewLine Num="1" UId="114" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="115">
+    <Text UId="116">     01.01    02.08.2022  Dorn, F.            Reset functiongroup after graph reinitialization</Text>
+  </LineComment>
+  <NewLine Num="1" UId="117" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="118">
+    <Text UId="119">     01.02    21.11.2022  Dorn, F.            Fixed graph time out. (caused 2 alarms)</Text>
+  </LineComment>
+  <NewLine Num="1" UId="120" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="121">
+    <Text UId="122">     01.03    18.02.2023  Dorn, F.            Implemented new internal signals in typeFgControlGeneral </Text>
+  </LineComment>
+  <NewLine Num="1" UId="123" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="124">
+    <Text UId="125">                                                  (start delays for GraphControl-funciton)</Text>
+  </LineComment>
+  <NewLine Num="1" UId="126" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="127">
+    <Text UId="128">     01.04    18.12.2023  Dorn, F.            Implemented signals for stop selected by...</Text>
+  </LineComment>
+  <NewLine Num="1" UId="129" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="130">
+    <Text UId="131">===============================================================================================================================</Text>
+  </LineComment>
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Version</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Version</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="16" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="17" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>*************** General ***************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>***************   Allgemein   ***************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="19" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="SQ_FLAGS" />
+        <Component Name="ERR_FLT" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="faultManagement" />
+        <Component Name="selectInstantStop" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="23" />
+    <Part Name="SCoil" UId="24" />
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <Powerrail />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="operand" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="23" Name="out" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="28">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Graph fault sent to group</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Graph Störung an Gruppe übertragen</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="S_DISPLAY" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="fgControlGeneral" />
+        <Component Name="seqNumber" />
+      </Symbol>
+    </Access>
+    <Part Name="Move" UId="23" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="24">
+      <Powerrail />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="25">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="26">
+      <NameCon UId="23" Name="out1" />
+      <IdentCon UId="22" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Set step number to FG control interface</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Schrittnummer auf FG-Control Schnittstelle legen</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="27" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="start" />
+        <Component Name="isPending" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="homePos" />
+        <Component Name="isPending" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="S_DISPLAY" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="reset" />
+        <Component Name="select" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="26" />
+    <Part Name="Contact" UId="27" />
+    <Part Name="O" UId="28">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="29">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="SCoil" UId="30" />
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="26" Name="in" />
+      <NameCon UId="27" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="28" Name="in1" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="operand" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="28" Name="in2" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="pre" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="23" />
+      <NameCon UId="29" Name="in1" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="in2" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="in" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="25" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="28" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="29" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Reset to function group after graph reinitialization</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Reset auf Funktiongruppe nach Graph-Reinitialisierung</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="30" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="31" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="32" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="33" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="38" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="39" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>*************** Single-step (TAP) ***************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>***************   Einzelschritt (TAP) ***************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="start" />
+        <Component Name="inExecutionPulse" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="fgControlGeneral" />
+        <Component Name="internalSignals" />
+        <Component Name="startDelayed" />
+        <Component Name="inExecutionPulse" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="start" />
+        <Component Name="inExecution" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="operatingMode" />
+        <Component Name="singleStep" />
+        <Component Name="isActive" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="MOP" />
+        <Component Name="TAP" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="S_DISPLAY" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="statLastStepNumber" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="T_DISPIDX" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>255</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="stop" />
+        <Component Name="selectBy" />
+        <Component Name="system" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="31">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Contact" UId="32">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Contact" UId="33" />
+    <Part Name="Contact" UId="34" />
+    <Part Name="Contact" UId="35" />
+    <Part Name="Eq" UId="36">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ne" UId="37">
+      <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+    </Part>
+    <Part Name="SCoil" UId="38" />
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="31" Name="in" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="31" Name="operand" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="22" />
+      <NameCon UId="32" Name="operand" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="23" />
+      <NameCon UId="33" Name="operand" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="24" />
+      <NameCon UId="34" Name="operand" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="34" Name="out" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="25" />
+      <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="35" Name="out" />
+      <NameCon UId="36" Name="pre" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="26" />
+      <NameCon UId="36" Name="in1" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="27" />
+      <NameCon UId="36" Name="in2" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="pre" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="28" />
+      <NameCon UId="37" Name="in1" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="in2" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="37" Name="out" />
+      <NameCon UId="38" Name="in" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="30" />
+      <NameCon UId="38" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="40" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Trigger stop to group at step end</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="42" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Stopp an Gruppe bei Schrittende auslösen</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="43" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="44" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="45" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="47" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="49" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="4A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="4D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>*************** Timeout monitoring ***************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="50" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>***************   Timeout Überwachung ***************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="51" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="start" />
+        <Component Name="inExecution" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="homePos" />
+        <Component Name="inExecution" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="fgControlGeneral" />
+        <Component Name="homePostionStep" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="fgControlGeneral" />
+        <Component Name="waitingPositionStep" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="S_DISPLAY" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="statLastStepNumber" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="timeOutTime" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="timeOut" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="faultManagement" />
+        <Component Name="ackFault" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="timeOut" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="statErrorTimeOut" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="32" />
+    <Part Name="Contact" UId="33" />
+    <Part Name="O" UId="34">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="35">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Contact" UId="36">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Eq" UId="37">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="TON" Version="1.0" UId="38">
+      <Instance Scope="LocalVariable" UId="39">
+        <Component Name="instTimerTimeOut" />
+      </Instance>
+      <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+    </Part>
+    <Part Name="SCoil" UId="40" />
+    <Part Name="Contact" UId="41" />
+    <Part Name="RCoil" UId="42" />
+    <Part Name="RCoil" UId="43" />
+  </Parts>
+  <Wires>
+    <Wire UId="45">
+      <Powerrail />
+      <NameCon UId="32" Name="in" />
+      <NameCon UId="33" Name="in" />
+      <NameCon UId="41" Name="in" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="21" />
+      <NameCon UId="32" Name="operand" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="34" Name="in1" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="22" />
+      <NameCon UId="33" Name="operand" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="in2" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="34" Name="out" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="23" />
+      <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="35" Name="out" />
+      <NameCon UId="36" Name="in" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="24" />
+      <NameCon UId="36" Name="operand" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="pre" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="25" />
+      <NameCon UId="37" Name="in1" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="26" />
+      <NameCon UId="37" Name="in2" />
+    </Wire>
+    <Wire UId="57">
+      <NameCon UId="37" Name="out" />
+      <NameCon UId="38" Name="IN" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="27" />
+      <NameCon UId="38" Name="PT" />
+    </Wire>
+    <Wire UId="59">
+      <NameCon UId="38" Name="Q" />
+      <NameCon UId="40" Name="in" />
+    </Wire>
+    <Wire UId="60">
+      <NameCon UId="38" Name="ET" />
+      <OpenCon UId="44" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="28" />
+      <NameCon UId="40" Name="operand" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="29" />
+      <NameCon UId="41" Name="operand" />
+    </Wire>
+    <Wire UId="63">
+      <NameCon UId="41" Name="out" />
+      <NameCon UId="42" Name="in" />
+      <NameCon UId="43" Name="in" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="30" />
+      <NameCon UId="42" Name="operand" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="31" />
+      <NameCon UId="43" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="52" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="53" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="54" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="55" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="56" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Set signal for step monitoring</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="57" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Signal für Schritt-Überwachung setzen</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="58" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="timeOut" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="statCount" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>2</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="SQ_FLAGS" />
+        <Component Name="ERR_FLT" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="statErrorTimeOut" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="S_DISPLAY" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="statGraphStepNumber" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="info" />
+        <Component Name="name" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="statFgName" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="30" />
+    <Part Name="Ge" UId="31">
+      <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="32">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="SCoil" UId="33" />
+    <Part Name="Move" UId="34" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="S_Move" UId="35" DisabledENO="true" />
+  </Parts>
+  <Wires>
+    <Wire UId="36">
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
+      <NameCon UId="35" Name="en" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="operand" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="in" />
+      <NameCon UId="34" Name="en" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="33" Name="operand" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="26" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="34" Name="out1" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="28" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="35" Name="out" />
+      <IdentCon UId="29" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="59" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>On a timeout, output "#timeOut" is switched first. This is to be programmed in every graph step in monitoring by default.
+With this, the step is also displayed in the diagnostic screen in the HMI in red.
+Local monitoring of this block should trigger only if the timeout has not been programmed into the graph step.
+(#statCount >= 1)
+
+Because the ERR_FLT flag from the rtData is first output offset by one PLC cycle, the fault must also be delayed by at least one additional PLC cycle.
+(#statCount >= 2)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Bei einem Time-Out wird zunächst der Ausgang "#timeOut" geschaltet. Diese soll standardmäßig in jedem Graph-Schritt in der Überwachung programmiert sein.
+Somit wird der Schritt dann auch im Diagnose-Bild auf dem HMI rot dagestellt.
+Nur, wenn der Time-Out im Graphschritt nicht programmeirt wurde, soll die lokale Überwachung von diesem Baustein auslösen.
+(#statCount >= 1)
+
+Da das Flag ERR_FLT vom den rtData erst um einen PLC-Zyklus versetzt ausgegeben wird, muss die Störung zusätzlich noch um mindestens einen PLC-Zyklus  verzögert werden.
+(#statCount >= 2)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="5C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Generate ProDiag fault if step monitoring does not respond</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>ProDiag Störung erzeugen, wenn Schrittüberwachung nicht anschlägt</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="5F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="timeOut" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="26" />
+  <Token Text="AND" UId="27" />
+  <Blank Num="1" UId="28" />
+  <Token Text="NOT" UId="29" />
+  <Blank Num="1" UId="30" />
+  <Token Text="(" UId="31" />
+  <Access Scope="LocalVariable" UId="32">
+    <Symbol UId="33">
+      <Component Name="rtData" UId="34" />
+      <Token Text="." UId="35" />
+      <Component Name="SQ_FLAGS" UId="36" />
+      <Token Text="." UId="37" />
+      <Component Name="ERR_FLT" UId="38" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="39" />
+  <Token Text="OR" UId="40" />
+  <Blank Num="1" UId="41" />
+  <Access Scope="LocalVariable" UId="42">
+    <Symbol UId="43">
+      <Component Name="statErrorTimeOut" UId="44" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="45" />
+  <Blank Num="1" UId="46" />
+  <Token Text="THEN" UId="47" />
+  <NewLine Num="1" UId="48" />
+  <Blank Num="4" UId="49" />
+  <Access Scope="LocalVariable" UId="50">
+    <Symbol UId="51">
+      <Component Name="statCount" UId="52" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="53" />
+  <Token Text="+=" UId="54" />
+  <Blank Num="1" UId="55" />
+  <Access Scope="LiteralConstant" UId="56">
+    <Constant UId="57">
+      <ConstantValue UId="59">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="60" />
+  <NewLine Num="1" UId="61" />
+  <Token Text="ELSIF" UId="62" />
+  <Blank Num="1" UId="63" />
+  <Token Text="NOT" UId="64" />
+  <Blank Num="1" UId="65" />
+  <Access Scope="LocalVariable" UId="66">
+    <Symbol UId="67">
+      <Component Name="timeOut" UId="68" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="69" />
+  <Token Text="THEN" UId="70" />
+  <NewLine Num="1" UId="71" />
+  <Blank Num="4" UId="72" />
+  <Access Scope="LocalVariable" UId="73">
+    <Symbol UId="74">
+      <Component Name="statCount" UId="75" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="76" />
+  <Token Text=":=" UId="77" />
+  <Blank Num="1" UId="78" />
+  <Access Scope="LiteralConstant" UId="79">
+    <Constant UId="80">
+      <ConstantValue UId="82">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="83" />
+  <NewLine Num="1" UId="84" />
+  <Token Text="END_IF" UId="85" />
+  <Token Text=";" UId="86" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="60" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="61" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="62" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="63" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="64" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Counter for fault</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="65" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Zähler für Störung</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="66" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="67" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="68" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="69" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="6B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="6D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="70" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="71" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="72" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>*************** Internal control signals ***************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="73" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>***************   Interne Steuersignale ***************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="74" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="rtData" />
+        <Component Name="S_DISPLAY" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="statLastStepNumber" />
+      </Symbol>
+    </Access>
+    <Part Name="Move" UId="23" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="24">
+      <Powerrail />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="25">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="26">
+      <NameCon UId="23" Name="out1" />
+      <IdentCon UId="22" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="75" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="76" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="77" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="78" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="79" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Update last step number</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Letzte Schrittnummer aktualisieren</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="7B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="start" />
+        <Component Name="inExecution" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="fgControlGeneral" />
+        <Component Name="internalSignals" />
+        <Component Name="startDelayed" />
+        <Component Name="inExecution" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="funcGrp" />
+        <Component Name="baseFunction" />
+        <Component Name="start" />
+        <Component Name="inExecutionPulse" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="fgControlGeneral" />
+        <Component Name="internalSignals" />
+        <Component Name="startDelayed" />
+        <Component Name="inExecutionPulse" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="25" />
+    <Part Name="Coil" UId="26" />
+    <Part Name="Contact" UId="27" />
+    <Part Name="Coil" UId="28" />
+  </Parts>
+  <Wires>
+    <Wire UId="29">
+      <Powerrail />
+      <NameCon UId="25" Name="in" />
+      <NameCon UId="27" Name="in" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="operand" />
+    </Wire>
+    <Wire UId="31">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="operand" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="28" Name="in" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="7C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="7F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="80" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Delayed start signals for "GraphControl"-FC</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="81" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Verzögerte Start-Signale für "GraphControl"-FC</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="82" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="83" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="84" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="85" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="86" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="87" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="88" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="89" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="8A" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>S7 graph evaluation</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8B" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>S7-Graph Auswertung</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
