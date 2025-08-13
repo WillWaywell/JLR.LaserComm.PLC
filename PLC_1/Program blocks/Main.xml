@@ -2,16 +2,16 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2025-08-05T09:35:52.6582469Z</Created>
+    <Created>2025-08-13T10:43:38.7127085Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
         <DisplayName>Totally Integrated Automation Portal</DisplayName>
-        <DisplayVersion>V17</DisplayVersion>
+        <DisplayVersion>V17 Update 8</DisplayVersion>
       </Product>
       <OptionPackage>
         <DisplayName>TIA Portal Openness</DisplayName>
-        <DisplayVersion>V17</DisplayVersion>
+        <DisplayVersion>V17 Update 8</DisplayVersion>
       </OptionPackage>
       <OptionPackage>
         <DisplayName>TIA Portal Version Control Interface</DisplayName>
@@ -19,27 +19,27 @@
       </OptionPackage>
       <Product>
         <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
-        <DisplayVersion>V17</DisplayVersion>
+        <DisplayVersion>V17 SP2</DisplayVersion>
       </Product>
       <OptionPackage>
-        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
-        <DisplayVersion>V17</DisplayVersion>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17 SP2</DisplayVersion>
       </OptionPackage>
       <OptionPackage>
-        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
-        <DisplayVersion>V17</DisplayVersion>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17 SP2</DisplayVersion>
       </OptionPackage>
       <Product>
         <DisplayName>STEP 7 Professional</DisplayName>
-        <DisplayVersion>V17</DisplayVersion>
+        <DisplayVersion>V17 Update 8</DisplayVersion>
       </Product>
       <OptionPackage>
         <DisplayName>STEP 7 Safety</DisplayName>
-        <DisplayVersion>V17</DisplayVersion>
+        <DisplayVersion>V17 Update 6</DisplayVersion>
       </OptionPackage>
       <Product>
         <DisplayName>WinCC Advanced</DisplayName>
-        <DisplayVersion>V17</DisplayVersion>
+        <DisplayVersion>V17 Update 8</DisplayVersion>
       </Product>
     </InstalledProducts>
   </DocumentInfo>
